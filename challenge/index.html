@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Functional Baap er Bank</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   <header>
+      <h1 class="text-7xl font-semibold text-center mb-7 mt-7">Functional <span class="bold text-blue-600">Baap er
+            bank</span>!!!!
+      </h1>
+   </header>
+   <main>
+
+      <!-- Calculation -->
+      <section>
+         <h1 class="text-7xl font-semibold text-center mb-7 mt-7">চ্যালেঞ্জ নাম্বার ওয়ান
+         </h1>
+         <p>নিজে নিজে আমাদের ভিডিও না দেখে বাপ এর ব্যাংক করে ফেলো। সম্ভব হলে মডিউল ২৭ এর মতো করে করো। আর একদম না পারলে
+            মডিউল ২৬ এর
+            মতো করে করো। তবে চ্যালেঞ্জ হচ্ছে তুমি চাইলে গুগলে সার্চ দিতে পারবে। কিন্তু আমাদের ভিডিও দেখতে পারবে না।
+            তাহলে
+            তুমি কোড
+            করতে গিয়ে ঠেকে যাবে। এই ঠেকে যাওয়া আর ২-৩ ঘন্টা গুতায় গুতায় একটা জিনিস শেষ পর্যন্ত ফিনিশ করে ফেলাটাই তোমার
+            লার্নিং। এইসব
+            ফ্রাসট্রেশন এর মধ্যে ঘাম ঝরিয়ে ঝরিয়েই একজন ডেভেলপার তৈরি হয়।</p>
+         <div class="grid grid-cols-3 gap-4 w-11/12 mx-auto text-white">
+            <div class="bg-violet-300 py-7 px-4 font-semibold rounded-lg">
+               <h3 class="text-4xl mb-3">Deposit</h3>
+               <h4 class="font-bold text-5xl">$<span id="total-deposit">00</span></h4>
+            </div>
+            <div class="bg-violet-400 py-7 px-4 font-semibold rounded-lg">
+               <h3 class="text-4xl mb-3">Withdraw</h3>
+               <h4 class="font-bold text-5xl">$<span id="total-withdraw">00</span></h4>
+            </div>
+            <div class="bg-violet-500 py-7 px-4 font-semibold rounded-lg">
+               <h3 class="text-4xl mb-3">Balance</h3>
+               <h4 class="font-bold text-5xl">$<span id="total-balance">1250</span></h4>
+            </div>
+         </div>
+      </section>
+
+      <!-- Your Deposit & Your withdraw -->
+      <section>
+         <div class="grid grid-cols-2 gap-4 w-11/12 mx-auto  mt-3">
+            <!-- ===============================Deposit=================== -->
+            <div class="bg-violet-400 rounded-lg py-7 px-5">
+               <h3 class="mb-4 text-white text-2xl font-semibold">Your Deposit</h3>
+               <input id="deposit-field" class="block w-11/12 rounded py-3 px-3 mb-3" type="text" name=""
+                  placeholder="$ Amount you want to deposit">
+               <button id="deposit-button"
+                  class="text-white py-3 px-4 text-lg font-semibold bg-violet-900 hover:bg-violet-700 rounded-lg"
+                  type="button">Deposit</button>
+            </div>
+            <!-- ==============================Withdraw====================== -->
+            <div class="bg-violet-700 rounded-lg py-7 px-5">
+               <h3 class="mb-4 text-white text-2xl font-semibold">Your Withdraw</h3>
+               <input id="withdraw-filed" class="block w-11/12 rounded py-3 px-3 mb-3" type="text" name=""
+                  placeholder="$ Amount you want to withdraw">
+               <button id="withdraw-button"
+                  class="text-white py-3 px-4 text-lg font-semibold bg-violet-500 hover:bg-violet-900 rounded-lg"
+                  type="button">Withdraw</button>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script src="./js/utilities.js"></script>
+   <script src="./js/deposit.js"></script>
+   <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
