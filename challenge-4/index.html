@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challenge : Text area</title>
+   <script src="https://kit.fontawesome.com/745f298c51.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+   <section class="bg-blue-300 rounded-lg  max-w-7xl mx-auto py-5 px-52 mt-5 shadow-lg shadow-gray-100/25">
+      <h2 class="text-center font-bold text-5xl text-violet-800 mb-5">MyText Editor</h2>
+      <div class="border-4 border-indigo-500 rounded-md p-5 ">
+         <div class="flex justify-between mb-3 flex-wrap">
+            <ul class="flex">
+               <li id="bold" class="mr-5 cursor-pointer"><i class="fa-solid fa-bold"></i></li>
+               <li id="italic" class="mr-5 cursor-pointer"><i class="fa-solid fa-italic"></i></li>
+               <li id="underline" class="mr-5 cursor-pointer"><i class="fa-solid fa-underline"></i></li>
+            </ul>
+            <ul class="flex">
+               <li id="left-align" class="mx-4 cursor-pointer"><i class="fa-solid fa-align-left"></i></li>
+               <li id="center-align" class="mx-4 cursor-pointer"><i class="fa-solid fa-align-center"></i></li>
+               <li id="right-align" class="mx-4 cursor-pointer"><i class="fa-solid fa-align-right"></i></li>
+               <li id="justify-align" class="mx-4 cursor-pointer"><i class="fa-solid fa-align-justify"></i></li>
+            </ul>
+            <ul class="flex">
+               <li id="font-size" class="ml-5 cursor-pointer"><input type="number" name="" id=""></li>
+               <li id="" class="ml-5 cursor-pointer"><i class="fa-solid fa-font"></i></li>
+               <li id="color-palate" class="ml-5 cursor-pointer"><input type="color" name="" id=""></li>
+            </ul>
+
+         </div>
+         <hr>
+         <div>
+            <textarea id="textArea-box" class="w-full rounded-md p-5" name="" id="" cols="30" rows="15"
+               placeholder="Write here something ..."></textarea>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <script src="./app.js"></script>
+</body>
+
+</html>

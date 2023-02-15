@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      @font-face {
+         font-family: 'american';
+         src: url('American Typewriter.ttf') format('truetype');
+      }
+
+      @font-face {
+         font-family: 'bdmod';
+         src: url('BASKVILL.TTF') format('truetype');
+      }
+
+      @font-face {
+         font-family: 'brush';
+         src: url('BRUSHSCI.TTF') format('truetype');
+      }
+
+      #american {
+         font-family: 'american';
+      }
+
+      #bdmod {
+         font-family: 'bdmod';
+      }
+
+      #brush {
+         font-family: 'brush';
+      }
+   </style>
+</head>
+
+<body>
+
+
+
+   <input id="spell" type="text" onfocus="this.value=''" value="Input spelling here." name="spelling">
+   <button onclick="document.getElementById('spell').value=''" ;>CLEAR </button>
+   <hr />
+   <select id="selectfonts" name="selectfonts">
+      <option selected disabled>Select font here...</option>
+      <option value="american" id="american"> American Typewriter </option>
+      <option value="bdmod" id="bdmod">BD Modern</option>
+      <option value="brush" id="brush">Brush Script</option>
+   </select>
+
+   <button onclick="displayspell(); selectfonts();"> SUBMIT </button>
+   <hr>
+   <textarea id="myTextarea" disabled></textarea>
+   <script>
+      function displayspell() {
+         var x = document.getElementById("spell").value;
+         document.getElementById("myTextarea").innerHTML = x;
+      }
+   </script>
+
+   <script>
+      function selectfonts() {
+         var s = document.getElementById('selectfonts');
+         var selectfonts = s.option[s.selectedIndex].value;
+
+         if (selectfonts == 'american') {
+            document.getElementById('myTextarea').style.font - family ='american';
+         }
+
+         else if (selectfonts == 'bdmod') {
+            document.getElementById('myTextarea').style.font - family = 'bdmod';
+         }
+
+         else if (selectfonts == 'brush') {
+            document.getElementById('myTextarea').style.font - family = 'brush';
+         }
+
+         else {
+            alert('Input spelling or choose font!');
+         }
+      }
+   </script>
+
+</body>
+
+</html>
