@@ -1,3 +1,14 @@
-font-size {
+
+
+.bold {
    font-weight: bold;
+}
+
+.h {
+   background-color: transparent; 
+   padding : 1px 12px;
+   border-radius: 4px;
+}
+.h:hover {
+   background-color: lightgrey;
 }
